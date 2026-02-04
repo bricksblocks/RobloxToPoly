@@ -26,7 +26,7 @@ local res, err = pcall(function()
             table.insert(totals, line)
         end
         print("Finished conversion!\nMaking file "..filename.."(robloxToPoly)...")
-        local file = io.open(filename:gsub("\\.lua", ' ').."(1).lua", 'a')
+        local file = io.open(filename:gsub("\\.lua", ' ').."(robloxToPoly).lua", 'a')
         for _, line in ipairs(totals) do
             print("Wrote line...")
             if file then file:write(line.."\n") end
