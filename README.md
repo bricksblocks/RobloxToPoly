@@ -8,5 +8,5 @@ Lua program to convert Roblox Luau code into Polytoria Lua.
 > Finally, type in **START** to initiate conversion
 Steps are also provided inside the program.
 --
-**Lua install (Linux, Ubuntu)**
+# Lua install (Linux, Ubuntu)
 `sudo apt install lua5.1`
