@@ -1,4 +1,5 @@
 # RobloxToPoly
+_**CURRENT VERSION: V0.0.9**_
 Lua program to convert Roblox Luau code into Polytoria Lua.
 *Be aware this is not done, it is not perfect and may make mistakes, I will polish this up in the future.*
 # Usage
