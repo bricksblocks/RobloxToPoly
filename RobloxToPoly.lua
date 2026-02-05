@@ -1,4 +1,4 @@
-print("Welcome to RobloxToPoly (v0.0.9).\nThis is a Luau -> Polytoria Lua converter.\nInput file name:")
+print("Welcome to RobloxToPoly (v0.1.0).\nThis is a Luau -> Polytoria Lua converter.\nInput file name:")
 local filename = io.read("*l")
 local file = nil
 local conversionapi = require("RemapAPI")
@@ -18,7 +18,6 @@ if selection == "S" then
     print("Finished conversion!\nMaking file "..filename.."(RobloxToPoly)...")
     local file = io.open(filename:gsub("%.lua", ' ').."(RobloxToPoly).lua", 'a')
     for nm, line in ipairs(totals) do
-        print("Wrote line "..nm)
         if file then file:write(line.."\n") end
     end
     if file then file:close() end
