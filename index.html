@@ -97,7 +97,7 @@ print("Your Luau code here.")
         lua.lua_call(ll, 1, 1);
         const converted = lua.lua_tojsstring(ll, -1);
         lua.lua_pop(ll, 1);
-        result.innerText = converted
+        result.value += converted
         status.textContent = "Status: finished conversion"
         setTimeout(function(){status.textContent = "Status: not converting"}, 1500)
     })
